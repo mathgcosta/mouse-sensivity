@@ -1,0 +1,40 @@
+xinput --list --short
+
+output:
+      Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ PixArt Lenovo USB Optical Mouse         	id=11	[slave  pointer  (2)]
+
+
+xinput --list-props "PixArt Lenovo USB Optical Mouse"
+or
+xinput --list-props 11
+
+output:
+Device 'PixArt Lenovo USB Optical Mouse':
+	Device Enabled (133):	1
+	Coordinate Transformation Matrix (135):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
+	libinput Accel Speed (269):	0.000000
+	libinput Accel Speed Default (270):	0.000000
+	libinput Accel Profiles Available (271):	1, 1
+	libinput Accel Profile Enabled (272):	1, 0
+	libinput Accel Profile Enabled Default (273):	1, 0
+	libinput Natural Scrolling Enabled (274):	0
+	libinput Natural Scrolling Enabled Default (275):	0
+	libinput Send Events Modes Available (253):	1, 0
+	libinput Send Events Mode Enabled (254):	0, 0
+	libinput Send Events Mode Enabled Default (255):	0, 0
+	libinput Left Handed Enabled (276):	0
+	libinput Left Handed Enabled Default (277):	0
+	libinput Scroll Methods Available (278):	0, 0, 1
+	libinput Scroll Method Enabled (279):	0, 0, 0
+	libinput Scroll Method Enabled Default (280):	0, 0, 0
+	libinput Button Scrolling Button (281):	2
+	libinput Button Scrolling Button Default (282):	274
+	libinput Middle Emulation Enabled (283):	1
+	libinput Middle Emulation Enabled Default (284):	0
+	Device Node (256):	"/dev/input/event4"
+	Device Product ID (257):	6127, 24717
+	libinput Drag Lock Buttons (285):	<no items>
+	libinput Horizonal Scroll Enabled (258):	1
+
